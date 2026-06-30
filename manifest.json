@@ -1,6 +1,6 @@
 {
   "name": "Send With Frankie",
-  "short_name": "S.Frankie",
+  "short_name": "SendWithFrankie",
   "description": "Tell Frankie what you need and where it's going. He picks it up, you get it at your door.",
   "start_url": "./index.html",
   "scope": "./",
