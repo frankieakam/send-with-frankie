@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Send With Frankie — Errands &amp; Food, Delivered</title>
+<meta name="description" content="Tell Frankie what you need and where it's going. He picks it up, you get it at your door. No app, no signup, just WhatsApp.">
+<meta name="theme-color" content="#0F2A2E">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="dot"></span>Send With Frankie</a>
+    <button class="nav-cta" onclick="document.getElementById('order-form').scrollIntoView({behavior:'smooth'})">Send something</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grain"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Calabar &middot; pickup &amp; delivery</div>
+        <h1>You name it.<br>I <em>go get it.</em></h1>
+        <p class="lead">Food from that spot with no delivery. A package from across town. An errand you don't have time for. Tell me what you need and where it's going, I'll pick it up and bring it to your door.</p>
+        <div class="hero-ctas">
+          <button class="btn-primary" onclick="document.getElementById('order-form').scrollIntoView({behavior:'smooth'})">
+            Send something
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <a href="#how" class="btn-ghost">How it works</a>
+        </div>
+        <div class="trust-row">
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>Pay only after I confirm</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>Handled over WhatsApp, no app needed</span>
+        </div>
+      </div>
+
+      <div class="route-card">
+        <div class="label">Live example</div>
+        <div class="route-points">
+          <svg class="route-line-svg" viewBox="0 0 2 100" preserveAspectRatio="none">
+            <path d="M1,0 L1,100"/>
+          </svg>
+          <div class="route-marker"></div>
+          <div class="point pickup">
+            <span class="point-dot"></span>
+            <div class="point-text"><strong>Pickup</strong><span>Mama Bisi's Kitchen, Marian Road</span></div>
+          </div>
+          <div class="point dropoff">
+            <span class="point-dot"></span>
+            <div class="point-text"><strong>Drop&#8209;off</strong><span>4 Eta Agbor Layout, Calabar</span></div>
+          </div>
+        </div>
+        <div class="route-meta">
+          <span>Est. delivery <strong>35&ndash;45 min</strong></span>
+          <span>Fee from <strong>&#8358;500</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps. No app to download.</h2>
+      <p>This isn't a platform with riders to manage or restaurants to onboard. It's just me, picking up what you need and bringing it to you.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step-num">01</span>
+        <h3>Fill the form</h3>
+        <p>Tell me what to pick up, where from, and where it's going. Takes under a minute.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">02</span>
+        <h3>Confirm on WhatsApp</h3>
+        <p>Your details land in a pre&#8209;written WhatsApp message. Hit send and I'll confirm the cost with you.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">03</span>
+        <h3>It gets delivered</h3>
+        <p>I pick it up myself and bring it straight to your door. You track everything through the same chat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section options-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Payment</div>
+      <h2>Two simple ways to pay</h2>
+      <p>Choose the option that fits when you fill the form below. Either way, payment happens over WhatsApp, after I confirm the exact cost with you.</p>
+    </div>
+    <div class="options-grid">
+      <div class="option-card reveal">
+        <span class="tag">Option A</span>
+        <h3>I'll send funds for the item(s)</h3>
+        <p>Haven't paid yet? You'll let me know the item cost, I'll let you know the delivery fee, then send you account details to pay before I head out.</p>
+      </div>
+      <div class="option-card reveal">
+        <span class="tag">Option B</span>
+        <h3>Item(s) already paid for</h3>
+        <p>Already settled the item? Then it's just the delivery fee, I'll confirm the amount based on distance and send payment details before pickup.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section form-section" id="order-form">
+  <div class="hero-grain"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Get started</div>
+      <h2>Tell me what you need</h2>
+      <p>Fill this out, it opens WhatsApp with your details already written. Just hit send from there.</p>
+    </div>
+
+    <form class="form-card reveal" id="errandForm" novalidate>
+      <div class="field" id="field-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="e.g. Chidinma Effiong" required>
+        <div class="form-error">Please enter your name.</div>
+      </div>
+
+      <div class="field" id="field-phone">
+        <label for="phone">Contact number <span class="hint">(WhatsApp preferred)</span></label>
+        <input type="tel" id="phone" placeholder="e.g. 0803 123 4567" required>
+        <div class="form-error">Please enter a valid phone number.</div>
+      </div>
+
+      <div class="field" id="field-pickup">
+        <label for="pickup">Pickup address</label>
+        <textarea id="pickup" placeholder="e.g. Genesis Restaurant, Marian Road, Calabar" required></textarea>
+        <div class="form-error">Please enter the pickup address.</div>
+      </div>
+
+      <div class="field" id="field-item">
+        <label for="item">Item(s) to pick up</label>
+        <textarea id="item" placeholder="e.g. 1 plate of jollof rice with chicken, 1 chapman" required></textarea>
+        <div class="form-error">Please describe the item(s).</div>
+      </div>
+
+      <div class="field" id="field-payment">
+        <label>Payment for item(s)</label>
+        <div class="radio-group">
+          <label class="radio-option" data-opt="fund">
+            <input type="radio" name="payment" value="I will send funds for the item(s) to be paid for">
+            <span class="ro-text"><strong>I'll send funds for the item(s)</strong><span>You'll pay the item cost + delivery fee over WhatsApp</span></span>
+          </label>
+          <label class="radio-option" data-opt="paid">
+            <input type="radio" name="payment" value="Item(s) already paid for">
+            <span class="ro-text"><strong>Item(s) already paid for</strong><span>Only the delivery fee will be sent over WhatsApp</span></span>
+          </label>
+        </div>
+        <div class="form-error">Please choose a payment option.</div>
+      </div>
+
+      <div class="field" id="field-dropoff">
+        <label for="dropoff">Delivery address</label>
+        <textarea id="dropoff" placeholder="e.g. 4 Eta Agbor Layout, Calabar" required></textarea>
+        <div class="form-error">Please enter the delivery address.</div>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Continue on WhatsApp
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.4.9.9-3.3-.2-.3C3.7 14.7 3.2 13.3 3.2 12c0-4.8 3.9-8.7 8.8-8.7s8.7 3.9 8.7 8.7-3.9 8.8-8.7 8.8z"/></svg>
+      </button>
+      <p class="submit-note">You'll review and confirm the message in WhatsApp before it sends, nothing is sent automatically.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="brand">Send With Frankie</a>
+    <span>Calabar, Nigeria &middot; Errands &amp; delivery, run by Frankie</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.12});
+  revealEls.forEach(el => io.observe(el));
+
+  // Radio styling
+  document.querySelectorAll('.radio-option').forEach(opt => {
+    const input = opt.querySelector('input');
+    input.addEventListener('change', () => {
+      document.querySelectorAll('.radio-option').forEach(o => o.classList.remove('checked'));
+      if(input.checked) opt.classList.add('checked');
+      document.getElementById('field-payment').classList.remove('invalid');
+    });
+  });
+
+  const WHATSAPP_NUMBER = "2349018848937"; // 09018848937 in international format
+
+  function showToast(msg){
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3200);
+  }
+
+  function setInvalid(fieldId, invalid){
+    const f = document.getElementById(fieldId);
+    f.classList.toggle('invalid', invalid);
+  }
+
+  document.getElementById('errandForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const pickup = document.getElementById('pickup').value.trim();
+    const item = document.getElementById('item').value.trim();
+    const dropoff = document.getElementById('dropoff').value.trim();
+    const paymentRadio = document.querySelector('input[name="payment"]:checked');
+
+    let valid = true;
+    setInvalid('field-name', !name); if(!name) valid = false;
+    setInvalid('field-phone', phone.replace(/\D/g,'').length < 7); if(phone.replace(/\D/g,'').length < 7) valid = false;
+    setInvalid('field-pickup', !pickup); if(!pickup) valid = false;
+    setInvalid('field-item', !item); if(!item) valid = false;
+    setInvalid('field-dropoff', !dropoff); if(!dropoff) valid = false;
+    setInvalid('field-payment', !paymentRadio); if(!paymentRadio) valid = false;
+
+    if(!valid){
+      showToast("Please fill in all fields before continuing.");
+      document.querySelector('.invalid').scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    const payment = paymentRadio.value;
+
+    const message =
+`Hi Frankie, I'd like to send something.
+
+*Name:* ${name}
+*Contact number:* ${phone}
+
+*Pickup address:* ${pickup}
+*Item(s):* ${item}
+
+*Payment:* ${payment}
+
+*Delivery address:* ${dropoff}`;
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  });
+
+  // Register service worker for PWA
+  if('serviceWorker' in navigator){
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
+</script>
+
+</body>
+</html>
