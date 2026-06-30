@@ -130,34 +130,34 @@
     <form class="form-card reveal" id="errandForm" novalidate>
       <div class="field" id="field-name">
         <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="e.g. Chidinma Effiong" required>
+        <input type="text" id="name" autocomplete="name" placeholder="e.g. Chidinma Effiong" required>
         <div class="form-error">Please enter your name.</div>
       </div>
 
       <div class="field" id="field-phone">
         <label for="phone">Contact number <span class="hint">(WhatsApp preferred)</span></label>
-        <input type="tel" id="phone" placeholder="e.g. 0803 123 4567" required>
+        <input type="tel" id="phone" autocomplete="tel" placeholder="e.g. 0803 123 4567" required>
         <div class="form-error">Please enter a valid phone number.</div>
       </div>
 
       <div class="field" id="field-pickup">
         <label for="pickup">Pickup address</label>
-        <textarea id="pickup" placeholder="e.g. Genesis Restaurant, Marian Road, Calabar" required></textarea>
+        <textarea id="pickup" autocomplete="street-address" placeholder="e.g. Genesis Restaurant, Marian Road, Calabar" required></textarea>
         <div class="form-error">Please enter the pickup address.</div>
       </div>
 
       <div class="field" id="field-item">
         <label for="item">Item(s) to pick up</label>
-        <textarea id="item" placeholder="e.g. 1 plate of jollof rice with chicken, 1 chapman" required></textarea>
+        <textarea id="item" autocomplete="off" placeholder="e.g. 1 plate of jollof rice with chicken, 1 chapman" required></textarea>
         <div class="form-error">Please describe the item(s).</div>
       </div>
 
-      <div class="field" id="field-payment">
-        <label>Payment for item(s)</label>
+      <fieldset class="field" id="field-payment">
+        <legend>Payment for item(s)</legend>
         <div class="radio-group">
           <label class="radio-option" data-opt="fund">
             <input type="radio" name="payment" value="I will send funds for the item(s) to be paid for">
-            <span class="ro-text"><strong>I'll send funds for the item(s)</strong><span>You'll pay the item cost + delivery fee over WhatsApp</span></span>
+            <span class="ro-text"><strong>I'll send funds for the item(s)</strong><span>I'll pay the item cost + delivery fee over WhatsApp</span></span>
           </label>
           <label class="radio-option" data-opt="paid">
             <input type="radio" name="payment" value="Item(s) already paid for">
@@ -165,7 +165,7 @@
           </label>
         </div>
         <div class="form-error">Please choose a payment option.</div>
-      </div>
+      </fieldset>
 
       <div class="field" id="field-dropoff">
         <label for="dropoff">Delivery address</label>
