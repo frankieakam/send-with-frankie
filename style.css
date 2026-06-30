@@ -44,7 +44,7 @@
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
   }
 
-  /* ---------- NAV ---------- */
+  /* NAV */
   nav{
     position:sticky; top:0; z-index:50;
     background:rgba(251,247,240,0.85);
@@ -80,7 +80,7 @@
   .nav-cta:hover{background:var(--amber);}
   .nav-cta:active{transform:scale(0.97);}
 
-  /* ---------- HERO ---------- */
+  /* HERO */
   .hero{
     position:relative;
     background:var(--ink);
@@ -243,7 +243,7 @@
     .hero{padding-top:80px;}
   }
 
-  /* ---------- HOW IT WORKS ---------- */
+  /* HOW IT WORKS */
   .section{padding:96px 0;}
   .section-head{
     max-width:560px;
@@ -301,7 +301,7 @@
     .step:not(:last-child)::after{display:none;}
   }
 
-  /* ---------- PAYMENT OPTIONS INFO ---------- */
+  /* PAYMENT OPTIONS INFO */
   .options-section{
     background:var(--paper-dim);
   }
@@ -332,7 +332,7 @@
   .option-card p{font-size:0.92rem; color:rgba(28,36,33,0.62);}
   @media (max-width: 700px){.options-grid{grid-template-columns:1fr;}}
 
-  /* ---------- FORM ---------- */
+  /* FORM */
   .form-section{
     background:var(--ink);
     color:var(--paper);
@@ -389,6 +389,24 @@
   }
   .field input::placeholder, .field textarea::placeholder{color:rgba(28,36,33,0.35);}
 
+   #field-payment {
+    border: 0;
+    padding: 0;
+    margin: 0 0 22px;
+    min-width: 0; /* prevents some browser layout issues */
+  }
+
+  #field-payment legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: 0.85rem;
+    font-weight: 600; 
+    line-height: 1.4;
+  }
+
   .radio-group{display:flex; flex-direction:column; gap:10px;}
   .radio-option{
     display:flex; align-items:flex-start; gap:12px;
@@ -438,7 +456,7 @@
   .field.invalid input, .field.invalid textarea{border-color:#C0392B;}
   .field.invalid .form-error{display:block;}
 
-  /* ---------- FOOTER ---------- */
+  /* FOOTER */
   footer{
     background:var(--ink);
     color:rgba(251,247,240,0.55);
